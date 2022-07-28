@@ -1,25 +1,84 @@
 ﻿
-@{
-    Layout = null;
+@*@{ 
+    ViewData["Title"] = "Home";
+}*@
+<section class="jumbotron text-center">
+    <div class="controller">
+        <environment include="Development">
+            <h3>Development</h3>
+        </environment>
+        <environment include="Production,Staging">
+            <h3>Production</h3>
+        </environment>
+        <h1>Welcome to Book Store</h1>
+        <p>
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Search Books</a>
+        </p>
+    </div>
+</section>
+
+<div class="py-5 bg-light">
+    <div class="container">
+        <h3 class="h3">Top Books</h3>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="col-mb-4 shadow-sm">
+                    <svg class="card-img-top bd-placeholder-img" width="100%" height="225" />
+                    <div class="card-body">
+                        <p class="card-text">short description will be displayed here...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-mb-4 shadow-sm">
+                    <svg class="card-img-top bd-placeholder-img" width="100%" height="225" />
+                    <div class="card-body">
+                        <p class="card-text">short description will be displayed here...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="col-mb-4 shadow-sm">
+                    <svg class="card-img-top bd-placeholder-img" width="100%" height="225" />
+                    <div class="card-body">
+                        <p class="card-text">short description will be displayed here...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+           // alert("documentis ready")
+        });
+    </script>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link href="~/css/Site.css" rel="stylesheet" />
-    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>Welcome to book store</h1>
-    <input type="button" class="btn btn-danger" value="click me"/>
-</body>
-<script src="~/lib/jquery/jquery.js"></script>
-</html>
-<script>
-    $(document).ready(function () {
-        alert("page loading");
-    })
-</script>

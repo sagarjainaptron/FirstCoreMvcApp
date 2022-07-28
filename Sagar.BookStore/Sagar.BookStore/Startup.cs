@@ -40,6 +40,10 @@ namespace Sagar.BookStore
                 });
                 */
                 endpoints.MapDefaultControllerRoute();
+                //endpoints.MapControllerRoute(
+                //    name: "Default",
+                //    pattern: "bookapp/{controller=Home}/{action=Index}/{id?}"
+                //    );
             });
         }
     }

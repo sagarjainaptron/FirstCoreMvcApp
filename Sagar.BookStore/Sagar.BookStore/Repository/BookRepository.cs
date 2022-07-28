@@ -28,31 +28,51 @@ namespace Sagar.BookStore.Repository
                 {
                     Id=1,
                     Title="MVC",
-                    Author="Sagar"
+                    Author="Sagar",
+                    Description="This is MVC book",
+                    Category="Programming",
+                    Language="English",
+                    TotalPages=1045
                 },
                 new BookModel()
                 {
                     Id=2,
                     Title="Core",
-                    Author="Sagar"
+                    Author="Sagar",
+                    Description="This is Core book",
+                    Category="Framework",
+                    Language="English",
+                    TotalPages=145
                 },
                 new BookModel()
                 {
                     Id=3,
                     Title="C#",
-                    Author="Chiku"
+                    Author="Chiku",
+                    Description="This is C# book",
+                    Category="Programming",
+                    Language="English",
+                    TotalPages=104
                 },
                 new BookModel()
                 {
                     Id=4,
                     Title="Java",
-                    Author="Yash"
+                    Author="Yash",
+                    Description="This is Java book",
+                    Category="Programming",
+                    Language="English",
+                    TotalPages=1345
                 },
                 new BookModel()
                 {
                     Id=5,
                     Title="React",
-                    Author="Nayak"
+                    Author="Nayak",
+                    Description="This is React book",
+                    Category="Designing",
+                    Language="English",
+                    TotalPages=1045
                 },
             };
         }

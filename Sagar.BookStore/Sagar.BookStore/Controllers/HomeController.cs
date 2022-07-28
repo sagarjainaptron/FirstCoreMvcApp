@@ -8,12 +8,22 @@ namespace Sagar.BookStore.Controllers
 {
     public class HomeController : Controller
     {
+        [ViewData]
+        public string Title { get; set; }
         public IActionResult Index()
         {
+            Title = "Home";
             return View();
         
-        }public IActionResult AboutUs()
+        }
+        public IActionResult AboutUs()
         {
+            Title = "About";
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            Title = "Contact";
             return View();
         }
     }
