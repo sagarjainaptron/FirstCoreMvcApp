@@ -13,6 +13,7 @@ namespace Sagar.BookStore.Data
 
         }
         public DbSet<Books> Books { get; set; }
+        public DbSet<BookGallery> BookGallery { get; set; }
         public DbSet<Language> Language { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
